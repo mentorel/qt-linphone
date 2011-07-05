@@ -1,0 +1,1823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QStackedWidget" name="guiPages">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>320</width>
+     <height>240</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">opacity: 0;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="currentIndex">
+    <number>5</number>
+   </property>
+   <widget class="QWidget" name="idleWindow">
+    <widget class="QComboBox" name="lp_mode_combo">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>80</y>
+       <width>121</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToContents</enum>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sip_server_ico">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>1</y>
+       <width>22</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>pics/register-off.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sip_register">
+     <property name="geometry">
+      <rect>
+       <x>62</x>
+       <y>41</y>
+       <width>220</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>нет регистрации</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="my_ipaddr">
+     <property name="geometry">
+      <rect>
+       <x>62</x>
+       <y>26</y>
+       <width>150</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>не определен</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="phone_mode">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>1</y>
+       <width>24</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>pics/spk_silent.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="amr_key">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>0</y>
+       <width>24</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>pics/key.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>26</y>
+       <width>60</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Мой IP:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="missed_calls">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>0</y>
+       <width>24</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>pics/call_warning.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>41</y>
+       <width>60</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SIP ID:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>25</y>
+       <width>60</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>118</red>
+           <green>118</green>
+           <blue>117</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="text">
+      <string>Мой IP:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>60</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>118</red>
+           <green>118</green>
+           <blue>117</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="text">
+      <string>SIP ID:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="my_ipaddr_s">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>61</x>
+       <y>25</y>
+       <width>150</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>118</red>
+           <green>118</green>
+           <blue>117</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="text">
+      <string>не определен</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sip_register_s">
+     <property name="geometry">
+      <rect>
+       <x>61</x>
+       <y>40</y>
+       <width>220</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>118</red>
+           <green>118</green>
+           <blue>117</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="text">
+      <string>нет регистрации</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="missed_label">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>56</y>
+       <width>169</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Неотвеченных вызовов:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="missed_label_s">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>55</y>
+       <width>200</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>118</red>
+           <green>118</green>
+           <blue>117</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="text">
+      <string>Неотвеченных вызовов:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="missedNum">
+     <property name="geometry">
+      <rect>
+       <x>185</x>
+       <y>56</y>
+       <width>60</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>99</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="missedNum_s">
+     <property name="geometry">
+      <rect>
+       <x>185</x>
+       <y>55</y>
+       <width>60</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>118</red>
+           <green>118</green>
+           <blue>117</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="text">
+      <string>99</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butMenu">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Меню</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butContacts">
+     <property name="geometry">
+      <rect>
+       <x>161</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Контакты</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butRedial">
+     <property name="geometry">
+      <rect>
+       <x>81</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Повтор</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butLog">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Журнал</string>
+     </property>
+    </widget>
+    <zorder>lp_mode_combo</zorder>
+    <zorder>sip_register</zorder>
+    <zorder>my_ipaddr</zorder>
+    <zorder>label</zorder>
+    <zorder>label_2</zorder>
+    <zorder>label_3</zorder>
+    <zorder>label_4</zorder>
+    <zorder>my_ipaddr_s</zorder>
+    <zorder>sip_register_s</zorder>
+    <zorder>missed_label</zorder>
+    <zorder>missed_label_s</zorder>
+    <zorder>missedNum</zorder>
+    <zorder>missedNum_s</zorder>
+    <zorder>butMenu</zorder>
+    <zorder>butContacts</zorder>
+    <zorder>butRedial</zorder>
+    <zorder>butLog</zorder>
+    <zorder>amr_key</zorder>
+    <zorder>missed_calls</zorder>
+    <zorder>phone_mode</zorder>
+    <zorder>sip_server_ico</zorder>
+   </widget>
+   <widget class="QWidget" name="dialWindow">
+    <widget class="QLabel" name="backgroundDial">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>320</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="panBotDial">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>320</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butDialCancel">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Отмена</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="panTopDial">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>320</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="winCaptionDial">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>0</y>
+       <width>128</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Введите номер</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditDial">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>60</y>
+       <width>316</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dialLineError">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>35</y>
+       <width>310</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Это не IP адрес!</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="menuMain">
+    <widget class="QLabel" name="panBotMenu">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>320</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butMenuCancel">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Выйти</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="panTopMenu">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>320</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="menuMainList">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>30</y>
+       <width>316</width>
+       <height>165</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(106, 106, 106);
+color: &quot;white&quot;;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Контакты</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>pics/addrbook_24.png</normaloff>pics/addrbook_24.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Журнал вызовов</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>pics/CallLog_24.png</normaloff>pics/CallLog_24.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Параметры</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>pics/sett.png</normaloff>pics/sett.png</iconset>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="winCaptionMenu">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>128</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Главное меню</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="phbookList">
+    <widget class="QLabel" name="panBotPhbook">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>320</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="backgroundPhbook">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>320</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="panTopPhbook">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>320</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="winCaptionPhbook">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>0</y>
+       <width>82</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Контакты</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="aBookList">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>30</y>
+       <width>316</width>
+       <height>165</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(106, 106, 106, 200);
+color: white;
+text-indent: 10px;</string>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="autoScrollMargin">
+      <number>10</number>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butPhbookCall">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>161</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Вызвать</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butPhbookAdd">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butPhbookDel">
+     <property name="geometry">
+      <rect>
+       <x>81</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Удалить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butPhbookCancel">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Выйти</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="phbookPage">
+    <widget class="QPushButton" name="butContactDel">
+     <property name="geometry">
+      <rect>
+       <x>81</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Удалить</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="winCaptionContact">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>250</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Имя Контакта</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butContactCancel">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Назад</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="panBotContact">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>320</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butContactCall">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>161</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Вызвать</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="backgroundContact">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>320</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QListView" name="aBookContact">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>30</y>
+       <width>316</width>
+       <height>165</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(106, 106, 106, 200);
+color: white;
+text-indent: 10px;</string>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="autoScrollMargin">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butContactEdit">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Изменить</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="panTopContact">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>320</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>backgroundContact</zorder>
+    <zorder>panTopContact</zorder>
+    <zorder>winCaptionContact</zorder>
+    <zorder>aBookContact</zorder>
+    <zorder>panBotContact</zorder>
+    <zorder>butContactEdit</zorder>
+    <zorder>butContactDel</zorder>
+    <zorder>butContactCall</zorder>
+    <zorder>butContactCancel</zorder>
+   </widget>
+   <widget class="QWidget" name="cNumPage">
+    <widget class="QLabel" name="backgroundNumbers">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>320</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="panTopNumbers">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>320</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="winCaptionNumbers">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>250</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Вызвать:</string>
+     </property>
+    </widget>
+    <widget class="QListView" name="contactNumbers">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>30</y>
+       <width>316</width>
+       <height>165</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(106, 106, 106, 200);
+color: white;
+text-indent: 10px;</string>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="autoScrollMargin">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="panBotNumbers">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>320</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butNumberCancel">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Отмена</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butNumberCall">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>161</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Вызвать</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="logPage">
+    <widget class="QLabel" name="backgroundLog">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>320</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="panTopLog">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>320</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="winCaptionLog">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>0</y>
+       <width>141</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Журнал вызовов</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="panBotLog">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>320</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="tabsLog">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>30</y>
+       <width>316</width>
+       <height>165</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(106,106,106);
+color: &quot;white&quot;;</string>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="usesScrollButtons">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="tabMissed">
+      <attribute name="title">
+       <string>Пропущенные </string>
+      </attribute>
+      <widget class="QListView" name="listMissed">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>312</width>
+         <height>132</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: &quot;white&quot;;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOn</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabIncoming">
+      <attribute name="title">
+       <string>Входящие </string>
+      </attribute>
+      <widget class="QListView" name="listIncoming">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>312</width>
+         <height>132</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: &quot;white&quot;;</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOn</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabOutgoing">
+      <attribute name="title">
+       <string>Исходящие </string>
+      </attribute>
+      <widget class="QListView" name="listOutgoing">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>312</width>
+         <height>132</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(106,106,106);
+color: &quot;white&quot;;</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOn</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="butLogDel">
+     <property name="geometry">
+      <rect>
+       <x>81</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Удалить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butLogAdd">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Сохранить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butLogCall">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>161</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Вызвать</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butLogCancel">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Выйти</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Call_Out">
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>281</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;
+background: &quot;steelblue&quot;;
+opacity: 200;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="menuParam">
+    <widget class="QListWidget" name="menuParamList">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>30</y>
+       <width>316</width>
+       <height>165</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(106, 106, 106);
+color: &quot;white&quot;;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Настройки сети</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>pics/net.png</normaloff>pics/net.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Настройки SIP</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>pics/sip.png</normaloff>pics/sip.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Дата/Время</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>pics/clock.png</normaloff>pics/clock.png</iconset>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="butPMCancel">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>201</y>
+       <width>78</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Выйти</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="menuParamNet">
+    <widget class="QListWidget" name="menuParamNetList">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>30</y>
+       <width>316</width>
+       <height>165</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(106, 106, 106);
+color: &quot;white&quot;;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Параметры IP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Сервер по умолчанию</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Сервера DNS</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Сетевое обнаружение</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="menuParamSip">
+    <widget class="QListWidget" name="menuParamSipList">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>30</y>
+       <width>316</width>
+       <height>165</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(106, 106, 106);
+color: &quot;white&quot;;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Учетная запись</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIP сервер</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Настройка портов</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Настройка VoIP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Сетевой экран</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="menuParamDate">
+    <widget class="QDateTimeEdit" name="dateTimeEdit">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>60</y>
+       <width>194</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="wrapping">
+      <bool>false</bool>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>320</width>
+     <height>240</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="panelTop">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dateTime">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>0</y>
+     <width>50</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string>18:00</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="panelBot">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>200</y>
+     <width>320</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>background</zorder>
+  <zorder>panelBot</zorder>
+  <zorder>panelTop</zorder>
+  <zorder>guiPages</zorder>
+  <zorder>dateTime</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lp_mode_combo</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
